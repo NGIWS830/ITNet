@@ -1,0 +1,41 @@
+backbone:
+  # [from, module, args]
+  - [-1, ConvNormLayer_fuse, [16, 3, 2, 1, None, False, "silu"]] # 0-P1/2
+  - [-1, ConvNormLayer_fuse, [32, 3, 2, 1, None, False, "silu"]] # 1-P2/4
+  - [-1, MANet, [64, {'module':InceptionDWBlock, 'param':{'mlp_ratio': 2.0}}, 1]] # 2-P2/4
+  - [-1, ConvNormLayer_fuse, [64, 3, 2, 1, None, False, "silu"]] # 3-P3/8
+  - [-1, MANet, [128, {'module':InceptionDWBlock, 'param':{'mlp_ratio': 2.0}}, 1]] # 4-P3/8
+  - [-1, ConvNormLayer_fuse, [128, 3, 2, 1, None, False, "silu"]] # 5-P4/16
+  - [-1, MANet, [128, {'module':InceptionDWBlock, 'param':{'mlp_ratio': 2.0}}, 1]] # 6-P4/16
+  - [-1, ConvNormLayer_fuse, [256, 3, 2, 1, None, False, "silu"]] # 7-P5/32
+  - [-1, MANet, [256, {'module':InceptionDWBlock, 'param':{'mlp_ratio': 2.0}}, 1]] # 8-P5/32
+
+encoder:
+  - [4, ConvNormLayer_fuse, [256, 1, 1, 1, None, False, "silu"]] # 5-P3/8   # 9-P3/8
+  - [6, ConvNormLayer_fuse, [256, 1, 1, 1, None, False, "silu"]] # 6-P4/16  # 10-P4/16
+  - [8, ConvNormLayer_fuse, [256, 1, 1, 1, None, False, "silu"]] # 7-P5/32  # 11-P5/32
+
+  - [-1, MetaFormer_Block, [128, {'module': SHSA, 'param':{'qk_dim': 16}}, {'module': ConvolutionalGLU, 'param': {'act_layer': nn.GELU, 'drop': 0.0}}, {'selfatt': True}]] # 8-P5/32  12
+
+  - [[12, 10, 9], FocusFeature, [[3, 5, 7, 9]]] # 9-P4/16  13
+  - [-1, ConvNormLayer_fuse, [256, 3, 2, 1, None, False, "silu"]] # 10-P5/32  14
+  - [13, nn.Upsample, [None, 2, "nearest"]] # 11-P3/8  15
+
+  - [[14, 12], MFM, [256]] # 12-P5/32  16
+  - [-1, C2f_Block, [256, {'module':Faster_Block, 'param':{'n_div': 4}}, 2]] # 13-P5/32   17
+
+  - [[15, 9], MFM, [256]] # 14-P3/8   18
+  - [-1, C2f_Block, [256, {'module':Faster_Block, 'param':{'n_div': 4}}, 2]] # 15-P3/8    19
+
+  - [[17, 13, 19], FocusFeature, [[3, 5, 7, 9]]] # 16-P4/16    20
+  - [-1, ConvNormLayer_fuse, [256, 3, 2, 1, None, False, "silu"]] # 17-P5/32    21
+  - [20, nn.Upsample, [None, 2, "nearest"]] # 18-P3/8    22
+
+  - [[21, 17], MFM, [256]] # 19-P5/32    23
+  - [-1, C2f_Block, [256, {'module':Faster_Block, 'param':{'n_div': 4}}, 2]] # 20-P5/32    24
+
+  - [[22, 19], MFM, [256]] # 21-P3/8    25
+  - [-1, C2f_Block, [256, {'module':Faster_Block, 'param':{'n_div': 4}}, 2]] # 22-P3/8    26
+
+decoder:
+  - [[26, 20, 24], DFINETransformer, {"feat_strides":[8, 16, 32], "hidden_dim": 256, "num_levels": 3, "num_layers": 3, "num_points": [3, 6, 3], "dim_feedforward": 1024}]
