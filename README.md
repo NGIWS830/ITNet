@@ -1,4 +1,4 @@
-# ITNet: Improved Transformer Network for Enhanced Small Object Detection in UAV Imagery
+# ITNet: Inductive Transformer Network with Feature Diffusion for UAV Small Object Detection
 
 **ITNet** 是一个专为无人机（UAV）航拍图像中的小目标检测而设计的深度学习网络。本项目基于 [DEIM](https://github.com/Shihoa/Deim) / [RT-DETR](https://github.com/lyuwenyu/RT-DETR) 架构进行了改进，引入了多种新颖模块以增强对微小特征的提取和融合能力。
 
