@@ -157,4 +157,4 @@ If you use this project in your research, please cite:
 ```
 
 ## 🙏 Acknowledgements
-This project is built upon the excellent open-source projects [DEIM](https://github.com/Shihoa/Deim). We thank the original authors for their contributions.
+This project is built upon the excellent open-source projects [DEIM](https://github.com/Intellindust-AI-Lab/DEIM). We thank the original authors for their contributions.
