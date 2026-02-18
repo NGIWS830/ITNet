@@ -23,7 +23,7 @@
 On the **VisDrone2019** and **HIT-UAV** datasets, compared to the DEIM and RT-DETR baselines, ITNet significantly improves small object detection accuracy ($AP_S$ increased by **5.0%** and **3.3%**, respectively) while maintaining real-time inference speed.
 
 <div align="center">
-  <img src="./assets/figure1.png" width="800"/>
+  <img src="./figure/figure.jpg" width="800"/>
   <br>
   <em>Figure 1: Overall Architecture of ITNet (MSMA Backbone + FDPN + SGT-Former)</em>
 </div>
