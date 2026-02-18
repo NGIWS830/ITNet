@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**中文** | [English](./README_en.md)
+**English** | [中文](./README.md)
 
 [![Paper](https://img.shields.io/badge/Paper-The_Visual_Computer-blue)](https://www.springer.com/371)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
