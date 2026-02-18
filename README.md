@@ -20,7 +20,7 @@
 
 **ITNet** 是一个专为 **无人机 (UAV) 航拍图像小目标检测** 设计的高效深度学习网络。针对航拍场景中存在的“各向异性目标畸变”和下采样过程中的“信息坍塌”问题，本项目提出了一种基于特征扩散和归纳偏置的 Transformer 架构。
 
-在 **VisDrone2019** 和 **HIT-UAV** 数据集上，ITNet 相比 DEIM 和 RT-DETR 基线模型，在保持实时推理速度的同时，显著提升了小目标的检测精度 ($AP_S$ 分别提升 **5.0%** 和 **3.3%**)。
+在 **VisDrone2019** 和 **HIT-UAV** 数据集上，ITNet 相比 DEIM 基线模型，在保持实时推理速度的同时，显著提升了小目标的检测精度 ($AP_S$ 分别提升 **5.0%** 和 **3.3%**)。
 
 <div align="center">
   <img src="./figure/figure.jpg" width="800"/>
@@ -163,5 +163,5 @@ ITNet/
 ```
 
 ## 🙏 致谢 (Acknowledgements)
-本项目基于优秀的开源项目 [RT-DETR](https://github.com/lyuwenyu/RT-DETR) 和 [DEIM](https://github.com/Shihoa/Deim) 构建，感谢原作者的贡献。
+本项目基于优秀的开源项目 [DEIM](https://github.com/Shihoa/Deim) 构建，感谢原作者的贡献。
 
