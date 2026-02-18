@@ -163,5 +163,5 @@ ITNet/
 ```
 
 ## 🙏 致谢 (Acknowledgements)
-本项目基于优秀的开源项目 [DEIM](https://github.com/Shihoa/Deim) 构建，感谢原作者的贡献。
+本项目基于优秀的开源项目 [DEIM](https://github.com/Intellindust-AI-Lab/DEIM) 构建，感谢原作者的贡献。
 
