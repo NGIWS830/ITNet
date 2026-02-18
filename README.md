@@ -4,9 +4,9 @@
 
 **中文** | [English](./README_en.md)
 
-[![Paper](https://img.shields.io/badge/Paper-The_Visual_Computer-blue)](https://link-to-your-paper)
+[![Paper](https://img.shields.io/badge/Paper-The_Visual_Computer-blue)](https://www.springer.com/371)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.10%2B-ee4c2c)](https://pytorch.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.3.0%2B-ee4c2c)](https://pytorch.org/)
 
 **[Fei Han](https://cs.ujs.edu.cn/info/1508/27347.htm)*, Jun Yang, Wen Gu, Henry Han, Conghua Zhou**
 
