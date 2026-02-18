@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.3.0%2B-ee4c2c)](https://pytorch.org/)
 
-**[Fei Han](https://cs.ujs.edu.cn/info/1508/27347.htm)*, Jun Yang, Wen Gu, Henry Han, Conghua Zhou**
+**[Fei Han](https://cs.ujs.edu.cn/info/1508/27347.htm)*, [Jun Yang](https://github.com/NGIWS830), Wen Gu, Henry Han, Conghua Zhou**
 
 *School of Computer Science and Communication Engineering, Jiangsu University*
 
@@ -35,7 +35,7 @@
 * **MSMA Backbone (正交分解骨干网):**
     * 引入正交分解范式 (Orthogonal Decomposition Paradigm)，通过垂直和水平梯度流解决航拍目标的几何畸变问题。
     * 集成 **InceptionDWBlock** 以增强多尺度特征提取。
-* **FDPN (焦点扩散金字塔网络):**
+* **FDPN (聚焦-扩散金字塔网络):**
     * 通过 **FocusFeature** 模块建立特征扩散机制，主动传播核心语义信号。
     * 对抗下采样过程中的“信息坍塌”，有效重建微小目标的特征流。
 * **SGT-Former (归纳偏置驱动编码器):**
@@ -44,25 +44,23 @@
 
 ## 📊 性能表现 (Model Zoo)
 
-| Model | Backbone | Params (M) | FLOPs (G) | VisDrone $AP$ | VisDrone $AP_S$ | HIT-UAV $AP$ | HIT-UAV $AP_S$ |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ITNet** | **MSMA** | **9.4** | **24.3** | **26.7** (+3.6%) | **19.1** (+5.0%) | **54.1** (+1.9%) | **40.6** (+3.3%) |
+| Model | Params (M) | FLOPs (G) | VisDrone $AP$ | VisDrone $AP_{50}$ | VisDrone $AP_{75}$ | VisDrone $AP_S$ | HIT-UAV $AP$ | HIT-UAV $AP_{50}$ | HIT-UAV $AP_{75}$ | HIT-UAV $AP_S$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **ITNet** | **9.4** (↓8.2%) | **24.3** (↓2.3%) | **26.7** (↑3.6%) | **44.2** (↑5.3%) | **27.1** (↑3.7%) | **19.1** (↑5.0%) | **54.1** (↑1.9%) | **82.7** (↑3.8%) | **57.9** (↑0.7%) | **40.6** (↑3.3%) |
 
-> **注:** 更多详细对比实验结果请参考论文。
+> **注:** 更多详细实验结果请参考论文。
 
 ## 🛠️ 环境准备 (Installation)
 
-建议使用 Python 3.8+ 和 PyTorch 1.10+。
+建议使用 Python 3.8+ 和 PyTorch 2.3.0+。
 
 ```bash
 # 1. 克隆仓库
-git clone [https://github.com/NGIWS830/ITNet.git](https://github.com/NGIWS830/ITNet.git)
+git clone https://github.com/NGIWS830/ITNet.git
 cd ITNet
 
 # 2. 安装依赖
 pip install -r requirements.txt
-# 如果根目录没有 requirements.txt，请运行:
-# pip install torch torchvision pyyaml tqdm opencv-python scipy tensorboard
 ```
 
 (注意：如果根目录没有 `requirements.txt`，请参考 `tools/benchmark/requirements.txt` 或手动安装 `torch`, `torchvision`, `pyyaml`, `tqdm`, `opencv-python`, `scipy` 等基础库)
