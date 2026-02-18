@@ -20,7 +20,7 @@
 
 **ITNet** is a high-efficiency deep learning network designed specifically for **small object detection in UAV aerial imagery**. Addressing the challenges of "anisotropic object distortion" and "information collapse" during downsampling in aerial scenarios, this project proposes a Transformer architecture based on feature diffusion and inductive bias.
 
-On the **VisDrone2019** and **HIT-UAV** datasets, compared to the DEIM and RT-DETR baselines, ITNet significantly improves small object detection accuracy ($AP_S$ increased by **5.0%** and **3.3%**, respectively) while maintaining real-time inference speed.
+On the **VisDrone2019** and **HIT-UAV** datasets, compared to the DEIM baselines, ITNet significantly improves small object detection accuracy ($AP_S$ increased by **5.0%** and **3.3%**, respectively) while maintaining real-time inference speed.
 
 <div align="center">
   <img src="./figure/figure.jpg" width="800"/>
@@ -157,4 +157,4 @@ If you use this project in your research, please cite:
 ```
 
 ## 🙏 Acknowledgements
-This project is built upon the excellent open-source projects [RT-DETR](https://github.com/lyuwenyu/RT-DETR) and [DEIM](https://github.com/Shihoa/Deim). We thank the original authors for their contributions.
+This project is built upon the excellent open-source projects [DEIM](https://github.com/Shihoa/Deim). We thank the original authors for their contributions.
