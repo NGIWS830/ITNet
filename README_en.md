@@ -28,6 +28,16 @@ On the **VisDrone2019** and **HIT-UAV** datasets, compared to the DEIM baselines
   <em>Figure 1: Overall Architecture of ITNet (MSMA Backbone + FDPN + SGT-Former)</em>
 </div>
 
+## 🚀 Performance
+
+We compare ITNet with state-of-the-art real-time object detectors on the VisDrone dataset. As shown below, **ITNet achieves the best trade-off** between accuracy ($AP_S$), speed (FLOPs), and model size (Params).
+
+<div align="center">
+  <img src="./figure/figure_c.png" width="800"/>
+  <br>
+  <em><b>Figure:</b> Comprehensive performance comparison. ITNet (Red) is located in the top-left region, indicating superior performance with lower computational cost.</em>
+</div>
+
 ## 🚀 Key Features
 
 Based on the core contributions of the paper, this project implements the following modules:
