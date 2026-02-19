@@ -167,4 +167,9 @@ If you use this project in your research, please cite:
 ```
 
 ## 🙏 Acknowledgements
-This project is built upon the excellent open-source projects [DEIM](https://github.com/Intellindust-AI-Lab/DEIM). We thank the original authors for their contributions.
+
+This project is built upon the excellent open-source project [DEIM](https://github.com/Intellindust-AI-Lab/DEIM). We thank the original authors for their contributions.
+
+Additionally, we would like to thank the providers of the following datasets for their support:
+* [VisDrone](https://github.com/VisDrone/VisDrone-Dataset)
+* [HIT-UAV](https://github.com/sujichang/HIT-UAV-Infrared-Thermal-Dataset)
