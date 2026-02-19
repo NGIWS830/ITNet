@@ -175,3 +175,6 @@ ITNet/
 ## 🙏 致谢 (Acknowledgements)
 本项目基于优秀的开源项目 [DEIM](https://github.com/Intellindust-AI-Lab/DEIM) 构建，感谢原作者的贡献。
 
+此外，特别感谢以下数据集对本研究的支持：
+- [VisDrone](https://github.com/VisDrone/VisDrone-Dataset)
+- [HIT-UAV](https://github.com/sujichang/HIT-UAV-Infrared-Thermal-Dataset)
