@@ -35,7 +35,7 @@ We compare ITNet with state-of-the-art real-time object detectors on the VisDron
 <div align="center">
   <img src="./figure/figure_c.png" width="800"/>
   <br>
-  <em><b>Figure:</b> Comprehensive performance comparison. ITNet (Red) is located in the top-left region, indicating superior performance with lower computational cost.</em>
+  <em>Figure 2: Comprehensive performance comparison. ITNet (Red) is located in the top-left region, indicating superior performance with lower computational cost.</em>
 </div>
 
 ## 🚀 Key Features
