@@ -35,7 +35,7 @@
 <div align="center">
   <img src="./figure/figure_c.png" width="800"/>
   <br>
-  <em><b>图示：</b> 综合性能对比。ITNet（红色）位于左上角区域，表明其在拥有更低计算成本的同时具备更优越的性能。</em>
+  <em>图 2: 综合性能对比。ITNet（红色）位于左上角区域，表明其在拥有更低计算成本的同时具备更优越的性能。</em>
 </div>
 
 ## 🚀 核心创新 (Key Features)
