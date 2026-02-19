@@ -28,14 +28,14 @@
   <em>图 1: ITNet 整体架构图 (MSMA Backbone + FDPN + SGT-Former)</em>
 </div>
 
-## 🚀 Performance
+## 🚀 性能表现 (Performance)
 
-We compare ITNet with state-of-the-art real-time object detectors on the VisDrone dataset. As shown below, **ITNet achieves the best trade-off** between accuracy ($AP_S$), speed (FLOPs), and model size (Params).
+我们在 VisDrone 数据集上将 ITNet 与目前最先进的实时目标检测器进行了对比。如下图所示，**ITNet 在精度 ($AP_S$)、速度 (FLOPs) 和模型大小 (Params) 之间实现了最佳平衡**。
 
 <div align="center">
   <img src="./figure/figure_c.png" width="800"/>
   <br>
-  <em><b>Figure:</b> Comprehensive performance comparison. ITNet (Red) is located in the top-left region, indicating superior performance with lower computational cost.</em>
+  <em><b>图示：</b> 综合性能对比。ITNet（红色）位于左上角区域，表明其在拥有更低计算成本的同时具备更优越的性能。</em>
 </div>
 
 ## 🚀 核心创新 (Key Features)
