@@ -23,7 +23,7 @@
 在 **VisDrone2019** 和 **HIT-UAV** 数据集上，ITNet 相比 DEIM 基线模型，在保持实时推理速度的同时，显著提升了小目标的检测精度 ($AP_S$ 分别提升 **5.0%** 和 **3.3%**)。
 
 <div align="center">
-  <img src="./figure/figure.jpg" width="800"/>
+  <img src="./figure/figure.png" width="800"/>
   <br>
   <em>图 1: ITNet 整体架构图 (MSMA Backbone + FDPN + SGT-Former)</em>
 </div>
