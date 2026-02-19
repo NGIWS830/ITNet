@@ -172,4 +172,4 @@ This project is built upon the excellent open-source project [DEIM](https://gith
 
 Additionally, we would like to thank the providers of the following datasets for their support:
 * [VisDrone](https://github.com/VisDrone/VisDrone-Dataset)
-* [HIT-UAV](https://github.com/sujichang/HIT-UAV-Infrared-Thermal-Dataset)
+* [HIT-UAV](https://github.com/suojiashun/HIT-UAV-Infrared-Thermal-Dataset)
