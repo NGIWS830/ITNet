@@ -7,6 +7,7 @@
 [![Paper](https://img.shields.io/badge/Paper-The_Visual_Computer-blue)](https://www.springer.com/371)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.3.0%2B-ee4c2c)](https://pytorch.org/)
+[![CUDA](https://img.shields.io/badge/CUDA-12.3-76B900?logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
 
 **[Fei Han](https://cs.ujs.edu.cn/info/1508/27347.htm)*, [Jun Yang](https://github.com/NGIWS830), Wen Gu, Henry Han, Conghua Zhou**
 
