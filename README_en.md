@@ -156,13 +156,14 @@ ITNet/
 ```
 
 ## 📜 Citation
-If you use this project in your research, please cite:
 
-```bash
-@article{ITNet2026,
-  title={ITNet: Improved Transformer Network for Enhanced Small Object Detection in UAV Imagery},
-  author={Fei Han},
-  journal={Journal Name},
+If you have utilized this project in your research, please consider citing our paper (currently editorial review). Once formally accepted, we will update the citation information here:
+
+```bibtex
+@article{han2026itnet,
+  title={{ITNet}: Inductive Transformer Network with Diffusion of Feature for UAV Small Object Detection},
+  author={Han, Fei and Yang, Jun and Gu, Wen and Han, Henry and Zhou, Conghua},
+  journal={The Visual Computer},
   year={2026}
 }
 ```
